@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Activity Tracker</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="header_container">
+            <h1 class="header">Activity tracker</h1>
+        </div>
+
+        <div class="add_activity">
+            <form action="php/insertDB.php" id="form" method="POST">
+                <span class="text_add_actv">Add new activity:</span>
+                <input class="input_type" id="start_time" type="text" placeholder="Start time" name="StartTime">
+                <input class="input_type" id="finish_time" type="text" placeholder="Finish time" name="FinishTime">
+                <input class="input_type" id="distance" type="" placeholder="Distance" name="Distance">
+                <select class="select_type" name="ActivityType">
+                        <option>Select activity type:</option>
+                        <option value="Run">Run</option>
+                        <option value="Ride">Ride</option>
+                </select>
+                <input class="save_btn" type="submit" name="formSubmit" value="Save">
+            </form>
+        </div> <!-- ADD ACTIVITY -->
+
+        <div class="show_activity">
+            <div class='render_list'></div>
+            <div class="total">
+                <div class='longest_distance'></div>
+                <div class="total_distance"></div>
+            </div>
+        </div> <!-- SHOW ACTIVITY -->
+    </div> <!-- MAIN CONTAINER -->
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

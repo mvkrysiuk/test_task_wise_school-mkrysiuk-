@@ -1,0 +1,157 @@
+/* GENERAL SETTINGS */
+body {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.main_container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* HEADER */
+.header_container {
+    display: flex;
+    justify-content: center;   
+    max-width: 900px;
+    border: 2px solid #4c4d4d;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #b1def0;
+}
+
+.header {
+    color: #4c4d4d; 
+    font-weight: 300;
+}
+
+/* ADD ACTIVITY */
+.add_activity {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around; 
+    max-width: 900px;
+    border: 2px solid #4c4d4d;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #c4ebfa;
+}
+
+.text_add_actv {
+    color: #4c4d4d; 
+    margin: 30px 20px 30px 0;
+}
+
+.input_type {
+    height:30px;
+    width: 100px;
+    margin: 30px 20px 30px 0;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+}
+
+.select_type {
+    height:30px;
+    width: 200px;
+    margin: 30px 20px 30px 0;
+    padding: 0 0 0 5px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color: #4c4d4d; 
+}
+
+.save_btn {
+    height:30px;
+    width: 100px;
+    background-color: #3b3b3b;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color: #fff; 
+    margin: 0 20px 0 0;
+}
+
+.save_btn:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer; 
+}
+
+/* SHOW ACTIVITY */
+.show_activity {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+}
+  
+.render_list {
+    width: 500px;
+}
+
+.list {
+    text-align: center;
+    margin: 0 0 8px 0;
+    border: 2px solid #4c4d4d;
+    border-radius: 5px;
+    background-color: #fdb59a;
+}
+
+.record {
+    padding: 20px;
+    color: #4c4d4d;
+}
+
+/* LONGEST DISTANCE */
+.longest_distance {
+    width: 350px;
+    height: 180px;
+    text-align: center;
+    border: 2px solid #4c4d4d;
+    border-radius: 5px;
+    background-color: #fdb59a;
+    margin-bottom: 20px;
+}
+.longest_index {
+    padding-top: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center; 
+    margin-bottom: 5px;
+}
+
+.record_longest_data {
+    padding-right: 60px;
+}
+
+.record_longest_distance {
+    padding-right: 60px;
+}
+
+/* TOTAL DISTANCE */
+.total_distance {
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid #4c4d4d;
+    border-radius: 5px;
+    background-color: #e0bde7;
+}
+
+.record_total {
+    padding-left: 30px;
+}
